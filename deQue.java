@@ -70,7 +70,7 @@ public class deQue {
             }
         }
     }
-    public static void displayOperators(){
+    public static void displayPointers(){
         System.out.println("\nLeft: " + left);
         System.out.println("Right: " + right);
     }
@@ -119,7 +119,7 @@ public class deQue {
                     System.out.println("Enter a valid choice!");
                     break;
             }
-            displayOperators();
+            displayPointers();
         }
     }
 }
