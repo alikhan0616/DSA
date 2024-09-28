@@ -12,7 +12,7 @@
 
             while(true) { // start of while
 
-                System.out.println("1 : Insert In Circular Queue (Insert)");
+                System.out.println("\n1 : Insert In Circular Queue (Insert)");
                 System.out.println("2 : Delete From Circular Queue (Front)");
                 System.out.println("3 : Display Circular Queue");
                 System.out.println("4 : Exit\n");
@@ -37,6 +37,7 @@
                         break;
 
                 } //end switch statement
+                displayPointers();
             } //end while
         }//end main
 
@@ -87,8 +88,9 @@
         public static void display() { // start of display()
             if (rear!=-1) {
                 int i= front;
+                System.out.print("Queue contains: ");
                 while(i != rear   ) {
-                    System.out.println(cqueue[i]);
+                    System.out.print(cqueue[i] + " ");
                     i++;
                             if(i == max )
                                 i=0;
@@ -97,9 +99,13 @@
                 }
             }
             else
-                System.out.println("\nNO Value in Cricular Queue\n");
+                System.out.println("\nNO Value in Circular Queue\n");
 
         }//end display
+        public static void displayPointers(){
+            System.out.println("\nFront: " + front);
+            System.out.println("Rear: " + rear);
+        }
 
     } //end class circular queue
 
