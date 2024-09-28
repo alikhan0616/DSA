@@ -46,7 +46,7 @@ public class pQueue{
         if(count == -1)
             System.out.println("Priority Queue is empty");
         else {
-            for(int i = 0; i <= count; i++){  // Change to i <= count to include last element
+            for(int i = 0; i <= count; i++){  
                 System.out.println("Item: "+ pq[i].value + " | Priority: " + pq[i].priority);
             }
         }
