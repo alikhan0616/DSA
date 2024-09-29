@@ -38,7 +38,7 @@ public class deQue {
             item = data[left];
             System.out.println(item);
             left++;
-            if (left > max)
+            if (left >= max)
                 left = 0;
             count--;
         }
@@ -70,7 +70,7 @@ public class deQue {
             }
         }
     }
-    public static void displayPointers(){
+    public static void displayOperators(){
         System.out.println("\nLeft: " + left);
         System.out.println("Right: " + right);
     }
@@ -119,7 +119,7 @@ public class deQue {
                     System.out.println("Enter a valid choice!");
                     break;
             }
-            displayPointers();
+            displayOperators();
         }
     }
 }
