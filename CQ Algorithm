@@ -1,0 +1,92 @@
+BEGIN
+
+    // Initialize the circular queue
+    DECLARE cq[20] // Array of size 20
+    SET max = 5
+    SET front = -1
+    SET rear = -1
+
+    FUNCTION Insert(item):
+        IF (front == 0 AND rear == max - 1) OR (front == rear + 1) THEN
+            PRINT "Queue is overflow..."
+        ELSE
+            IF front == -1 THEN
+                SET front = 0
+                SET rear = 0
+            ELSE
+                IF rear == max - 1 THEN
+                    SET rear = 0
+                ELSE
+                    SET rear = rear + 1
+            ENDIF
+            SET cq[rear] = item
+            PRINT "Item inserted"
+        ENDIF
+    END FUNCTION
+
+    FUNCTION Delete():
+        IF front == -1 THEN
+            PRINT "Queue is underflow..."
+        ELSE
+            SET item = cq[front]
+            PRINT "Item deleted is: " + item
+            IF front == rear THEN
+                SET front = -1
+                SET rear = -1
+            ELSE
+                IF front == max - 1 THEN
+                    SET front = 0
+                ELSE
+                    SET front = front + 1
+            ENDIF
+        ENDIF
+    END FUNCTION
+
+    FUNCTION Display():
+        IF rear != -1 THEN
+            SET num = front
+            PRINT "Queue: "
+            WHILE TRUE DO
+                PRINT cq[num] + ", "
+                IF num == rear THEN
+                    BREAK
+                ENDIF
+                num = num + 1
+                IF num == max THEN
+                    SET num = 0
+                ENDIF
+            ENDWHILE
+        ELSE
+            PRINT "Queue is underflow..."
+        ENDIF
+    END FUNCTION
+
+    FUNCTION DisplayPointers():
+        PRINT "Front: " + front + " Rear: " + rear
+    END FUNCTION
+
+    // Main program loop
+    WHILE TRUE DO
+        PRINT "1: Insert in Circular Queue"
+        PRINT "2: Delete in Circular Queue"
+        PRINT "3: Display Circular Queue"
+        PRINT "4: Exit"
+        PROMPT user for choice
+
+        SWITCH choice DO
+            CASE '1':
+                PROMPT user for item to insert
+                CALL Insert(item)
+            CASE '2':
+                CALL Delete()
+            CASE '3':
+                CALL Display()
+            CASE '4':
+                EXIT program
+            DEFAULT:
+                PRINT "Enter valid choice!"
+        END SWITCH
+        CALL DisplayPointers()
+    END WHILE
+
+END
