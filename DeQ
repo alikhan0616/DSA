@@ -1,0 +1,120 @@
+BEGIN Deque
+    INITIALIZE data as array of size 20
+    SET left to 0
+    SET right to -1
+    SET count to 0
+    SET max to 5
+
+    FUNCTION insertLeft(item):
+        IF count equals max THEN
+            PRINT "Queue is full"
+        ELSE
+            DECREMENT left
+            IF left < 0 THEN
+                SET left to max - 1
+            ENDIF
+            SET data[left] to item
+            INCREMENT count
+        ENDIF
+    END FUNCTION
+
+    FUNCTION insertRight(item):
+        IF count equals max THEN
+            PRINT "Queue is full"
+        ELSE
+            INCREMENT right
+            IF right >= max THEN
+                SET right to 0
+            ENDIF
+            SET data[right] to item
+            INCREMENT count
+        ENDIF
+    END FUNCTION
+
+    FUNCTION delLeft():
+        IF count equals 0 THEN
+            PRINT "Queue is empty"
+        ELSE
+            SET item to data[left]
+            PRINT item
+            INCREMENT left
+            IF left >= max THEN
+                SET left to 0
+            ENDIF
+            DECREMENT count
+        ENDIF
+    END FUNCTION
+
+    FUNCTION delRight():
+        IF count equals 0 THEN
+            PRINT "Queue is empty"
+        ELSE
+            SET item to data[right]
+            PRINT item
+            DECREMENT right
+            IF right < 0 THEN
+                SET right to max - 1
+            ENDIF
+            DECREMENT count
+        ENDIF
+    END FUNCTION
+
+    FUNCTION display():
+        IF count equals 0 THEN
+            PRINT "Queue is empty"
+        ELSE
+            SET i to left
+            PRINT "Queue has: "
+            FOR j from 0 to count - 1 DO
+                PRINT data[i]
+                INCREMENT i
+                IF i >= max THEN
+                    SET i to 0
+                ENDIF
+            ENDFOR
+        ENDIF
+    END FUNCTION
+
+    FUNCTION displayOperators():
+        PRINT "Left index: " + left
+        PRINT "Right index: " + right
+    END FUNCTION
+
+    FUNCTION main():
+        WHILE true DO
+            PRINT "Menu:"
+            PRINT "1: Insert from Right"
+            PRINT "2: Insert from Left"
+            PRINT "3: Delete from Right"
+            PRINT "4: Delete from Left"
+            PRINT "5: Display"
+            PRINT "6: Exit"
+            PRINT "Your Choice: "
+            GET choice
+
+            SWITCH choice DO
+                CASE '1':
+                    PRINT "Enter value to insert from right: "
+                    GET item
+                    CALL insertRight(item)
+                CASE '2':
+                    PRINT "Enter value to insert from left: "
+                    GET item
+                    CALL insertLeft(item)
+                CASE '3':
+                    PRINT "Delete from right..."
+                    CALL delRight()
+                CASE '4':
+                    PRINT "Deleting from left..."
+                    CALL delLeft()
+                CASE '5':
+                    CALL display()
+                CASE '6':
+                    EXIT program
+                DEFAULT:
+                    PRINT "Enter a valid choice!"
+            ENDSWITCH
+            CALL displayOperators()
+        ENDWHILE
+    END FUNCTION
+END Deque
