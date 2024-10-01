@@ -45,27 +45,10 @@ public class circQ {
 
     public static void cqDisplay() {
         if (rear != -1) {
-            int num = front;
-            System.out.println("Queue elements: ");
-            while (true) {
-                System.out.print(cq[num] + " ");
-                if (num == rear)
-                    break;
-
-                num++;
-                if (num == max)
-                    num = 0;
-            }
-            System.out.println();
+            visualizeArray();
         } else
             System.out.println("Queue is underflow...");
-        visualizeArray();
     }
-
-    public static void displayPointers() {
-        System.out.println("\nFront: " + front + " Rear: " + rear);
-    }
-
     public static void visualizeArray() {
         System.out.println("\nArray visualization:");
         // Print the array indexes.
