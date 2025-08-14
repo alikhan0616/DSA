@@ -1,26 +1,25 @@
 class Solution {
     public int countStudents(int[] students, int[] sandwiches) {
-        Deque<Integer> q = new ArrayDeque<>();
-        Stack<Integer> s = new Stack<>();
-        for(int i = 0 ; i < students.length ; i++){
-            q.offerLast(students[i]);
-        }
-        for(int i  = sandwiches.length - 1; i >= 0 ; i--){
-            s.push(sandwiches[i]);
-        }
-        int count = 0;
-        while(!q.isEmpty() || !s.isEmpty()){
-            if(q.peekFirst() == s.peek()){
-                s.pop();
-                q.pollFirst();
-                count = 0;
+        int circSandwiches = 0;
+        int sqrSandwiches = 0;
+        for(int choice : students){
+            if(choice == 0){
+                circSandwiches++;
             } else {
-                q.offerFirst(q.getLast());
-                q.pollLast();
-                count++;
-            } 
-            if(count >= q.size()) break;
+                sqrSandwiches++;
+            }
         }
-        return q.size();
+        for(int sandwich : sandwiches ){
+            if(sandwich == 0 && circSandwiches == 0){
+                return sqrSandwiches;
+            } else if(sandwich == 1 && sqrSandwiches == 0){
+                return circSandwiches;
+            } else if(sandwich == 0){
+                circSandwiches--;
+            } else {
+                sqrSandwiches--;
+            }
+        }
+        return 0;
     }
 }
