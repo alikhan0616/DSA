@@ -1,0 +1,99 @@
+BEGIN PriorityQueue
+    // Initialize variables
+    INITIALIZE pq as array of size 5
+    SET count to -1
+    SET max to 5
+
+    // Define a class for Priority Queue items
+    CLASS QueueItem:
+        INTEGER value
+        INTEGER priority
+    END CLASS
+
+    // Function to insert an item into the priority queue
+    FUNCTION pqInsert(item, priority):
+        IF count equals max - 1 THEN
+            PRINT "Priority Queue is full..."
+        ELSE
+            INCREMENT count
+            SET pq[count].value to item
+            SET pq[count].priority to priority
+            PRINT "Value: " + item + " Priority: " + priority
+        ENDIF
+    END FUNCTION
+
+    // Function to delete the item with the highest priority
+    FUNCTION pqDelete():
+        IF count equals -1 THEN
+            PRINT "Priority Queue is empty"
+        ELSE
+            SET location to 0
+            SET maxPr to pq[0].priority
+
+            FOR i from 1 to count DO
+                IF maxPr < pq[i].priority THEN
+                    SET maxPr to pq[i].priority
+                    SET location to i
+                ENDIF
+            ENDFOR
+
+            PRINT "Item deleted is: " + pq[location].value + " With priority: " + pq[location].priority
+
+            // Shift remaining elements
+            FOR i from location to count - 1 DO
+                SET pq[i].value to pq[i + 1].value
+                SET pq[i].priority to pq[i + 1].priority
+            ENDFOR
+
+            DECREMENT count
+        ENDIF
+    END FUNCTION
+
+    // Function to display all items in the priority queue
+    FUNCTION display():
+        IF count equals -1 THEN
+            PRINT "Priority Queue is empty"
+        ELSE
+            FOR i from 0 to count DO
+                PRINT "Item: " + pq[i].value + " | Priority: " + pq[i].priority
+            ENDFOR
+        ENDIF
+    END FUNCTION
+
+    // Main program to run the priority queue operations
+    FUNCTION main():
+        // Initialize the array of QueueItem
+        FOR i from 0 to max - 1 DO
+            SET pq[i] to new QueueItem
+        ENDFOR
+
+        INITIALIZE input as Scanner
+        SET choice as character
+
+        WHILE true DO
+            PRINT "\n1: Insert in priority queue"
+            PRINT "2: Delete from priority queue"
+            PRINT "3: Display priority queue"
+            PRINT "4: Exit"
+            PRINT "\nEnter your choice: "
+            GET choice
+
+            SWITCH choice DO
+                CASE '1':
+                    PRINT "\nEnter the item you want to insert: "
+                    GET value
+                    PRINT "Enter its priority: "
+                    GET priority
+                    CALL pqInsert(value, priority)
+                CASE '2':
+                    CALL pqDelete()
+                CASE '3':
+                    CALL display()
+                CASE '4':
+                    EXIT program
+                DEFAULT:
+                    PRINT "Enter a valid choice!"
+            ENDSWITCH
+        ENDWHILE
+    END FUNCTION
+END PriorityQueue
