@@ -7,6 +7,7 @@ Personal codes for DSA
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
 ## Hash Table
 |  |
@@ -42,4 +43,12 @@ Personal codes for DSA
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
+## Two Pointers
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Binary Search
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 <!---LeetCode Topics End-->
