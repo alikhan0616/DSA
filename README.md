@@ -12,11 +12,13 @@ Personal codes for DSA
 ## Hash Table
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/alikhan0616/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
 ## String
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/alikhan0616/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
 ## Sorting
 |  |
@@ -51,4 +53,8 @@ Personal codes for DSA
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Sliding Window
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/alikhan0616/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 <!---LeetCode Topics End-->
