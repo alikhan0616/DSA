@@ -6,6 +6,7 @@ Personal codes for DSA
 ## Array
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
@@ -50,6 +51,7 @@ Personal codes for DSA
 ## Two Pointers
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0567-permutation-in-string](https://github.com/alikhan0616/DSA/tree/master/0567-permutation-in-string) |
 ## Binary Search
@@ -61,4 +63,16 @@ Personal codes for DSA
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/alikhan0616/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0567-permutation-in-string](https://github.com/alikhan0616/DSA/tree/master/0567-permutation-in-string) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
+## Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
