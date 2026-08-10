@@ -8,6 +8,7 @@ Personal codes for DSA
 | ------- |
 | [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
+| [0084-largest-rectangle-in-histogram](https://github.com/alikhan0616/DSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
 | [0739-daily-temperatures](https://github.com/alikhan0616/DSA/tree/master/0739-daily-temperatures) |
@@ -72,10 +73,16 @@ Personal codes for DSA
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/alikhan0616/DSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0739-daily-temperatures](https://github.com/alikhan0616/DSA/tree/master/0739-daily-temperatures) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/alikhan0616/DSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0739-daily-temperatures](https://github.com/alikhan0616/DSA/tree/master/0739-daily-temperatures) |
+## Range Minimum/Maximum Query
+|  |
+| ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/alikhan0616/DSA/tree/master/0084-largest-rectangle-in-histogram) |
 <!---LeetCode Topics End-->
