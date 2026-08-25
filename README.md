@@ -6,6 +6,7 @@ Personal codes for DSA
 ## Array
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/alikhan0616/DSA/tree/master/0035-search-insert-position) |
 | [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
 | [0084-largest-rectangle-in-histogram](https://github.com/alikhan0616/DSA/tree/master/0084-largest-rectangle-in-histogram) |
@@ -62,6 +63,7 @@ Personal codes for DSA
 ## Binary Search
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/alikhan0616/DSA/tree/master/0035-search-insert-position) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0875-koko-eating-bananas](https://github.com/alikhan0616/DSA/tree/master/0875-koko-eating-bananas) |
 ## Sliding Window
