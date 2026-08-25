@@ -9,6 +9,7 @@ Personal codes for DSA
 | [0035-search-insert-position](https://github.com/alikhan0616/DSA/tree/master/0035-search-insert-position) |
 | [0042-trapping-rain-water](https://github.com/alikhan0616/DSA/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
+| [0066-plus-one](https://github.com/alikhan0616/DSA/tree/master/0066-plus-one) |
 | [0084-largest-rectangle-in-histogram](https://github.com/alikhan0616/DSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/alikhan0616/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
@@ -91,4 +92,8 @@ Personal codes for DSA
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/alikhan0616/DSA/tree/master/0084-largest-rectangle-in-histogram) |
+## Math
+|  |
+| ------- |
+| [0066-plus-one](https://github.com/alikhan0616/DSA/tree/master/0066-plus-one) |
 <!---LeetCode Topics End-->
