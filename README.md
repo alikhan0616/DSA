@@ -13,6 +13,7 @@ Personal codes for DSA
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
 | [0739-daily-temperatures](https://github.com/alikhan0616/DSA/tree/master/0739-daily-temperatures) |
 | [0875-koko-eating-bananas](https://github.com/alikhan0616/DSA/tree/master/0875-koko-eating-bananas) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/alikhan0616/DSA/tree/master/3718-smallest-missing-multiple-of-k) |
 ## Hash Table
 |  |
 | ------- |
@@ -20,6 +21,7 @@ Personal codes for DSA
 | [0049-group-anagrams](https://github.com/alikhan0616/DSA/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/alikhan0616/DSA/tree/master/0347-top-k-frequent-elements) |
 | [0567-permutation-in-string](https://github.com/alikhan0616/DSA/tree/master/0567-permutation-in-string) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/alikhan0616/DSA/tree/master/3718-smallest-missing-multiple-of-k) |
 ## String
 |  |
 | ------- |
